@@ -4,7 +4,7 @@ import urllib.parse
 import json
 
 
-# num of results per page
+# num of releases per page
 PER_PAGE = 50
 
 
