@@ -5,7 +5,7 @@ import json
 
 
 # num of releases per page
-PER_PAGE = 50
+PER_PAGE = 100
 
 
 def show_releases(sdk: str) -> None:
