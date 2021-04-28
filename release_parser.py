@@ -18,6 +18,7 @@ def show_releases(sdk: str) -> None:
     urls = {
         "web": f"https://api.github.com/repos/onfido/onfido-sdk-ui/releases?{params}",
         "android": f"https://api.github.com/repos/onfido/onfido-android-sdk/releases?{params}",
+        "ios": f"https://api.github.com/repos/onfido/onfido-ios-sdk/releases?{params}",
     }
     url = urls[sdk]
     request = urllib.request.Request(
@@ -50,7 +51,12 @@ def get_options() -> argparse.Namespace:
         metavar="",
     )
     parser.add_argument(
-        "-sdk", action="store", help="Select SDK Product", metavar="", default="web"
+        "-sdk",
+        action="store",
+        help="Select SDK Product",
+        metavar="",
+        default="web",
+        choices=("web", "android", "ios"),
     )
     options = parser.parse_args()
     return options
