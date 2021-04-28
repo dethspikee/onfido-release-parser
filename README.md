@@ -21,9 +21,9 @@ python3 rparser.py | grep -i <keyword>
 ```python
 python3 rparser.py | grep -i <keyword> -A 10 -B 10
 ```
-### rparser can be used as a executable
+### rparser can be used as an executable
 1. Correct shebang if needed
-2. Assert execetuble permissions are granted
+2. Assert executable permissions are granted
 3. (optional) Place rparser in your PATH
 
 Same commands apply:
