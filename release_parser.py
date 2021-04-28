@@ -44,13 +44,6 @@ def get_options() -> argparse.Namespace:
         description="Parse release notes",
     )
     parser.add_argument(
-        "-v",
-        "--version",
-        action="store",
-        help="Select specific version",
-        metavar="",
-    )
-    parser.add_argument(
         "-sdk",
         action="store",
         help="Select SDK Product",
