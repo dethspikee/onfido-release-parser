@@ -26,7 +26,9 @@ python3 rparser.py | grep <keyword> -A 10 -B 10
 2. Assert execetuble permissions are granted
 3. (optional) Place rparser in your PATH
 
-1. See all releases for Web SDK
+Same commands apply:
+
+See release notes for version X.X.X
 ```bash
-rparser | grep Release:
+rparser | grep X.X.X -A 20
 ```
