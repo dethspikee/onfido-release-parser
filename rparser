@@ -6,8 +6,7 @@ import urllib.parse
 import json
 
 
-# num of releases per page
-PER_PAGE = 100
+RESULTS_PER_PAGE = 100
 
 
 def show_releases(sdk: str) -> None:
@@ -16,7 +15,7 @@ def show_releases(sdk: str) -> None:
     use Github API to retrieve release
     info for given SDK.
     """
-    params = urllib.parse.urlencode({"per_page": PER_PAGE})
+    params = urllib.parse.urlencode({"per_page": RESULTS_PER_PAGE})
     urls = {
         "web": f"https://api.github.com/repos/onfido/onfido-sdk-ui/releases?{params}",
         "android": f"https://api.github.com/repos/onfido/onfido-android-sdk/releases?{params}",
